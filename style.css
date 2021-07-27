@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-family: "";
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    z-index: 1;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 20px;
+    padding: 20px
+}
+
+.aus-logo {
+    font-family: "Work Sans";
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+}
+
+.tri-logo {
+    font-family: "Work Sans";
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    color:rgb(0, 208, 255);
+}
+
+.nav {
+    display: flex;
+    font-family: "Work Sans";
+}
+
+.nav p {
+    margin-left: 10px;
+}
+
+.top {
+    background-image: url(./images/viktor-bystrov-Gi0OMNguFaw-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.top-info {
+    height: auto;
+    width: 60%;
+    margin: auto;
+    justify-content: center;
+    color: white;
+    font-size: 26px;
+    font-style: italic;
+    text-align: center;
+    opacity: 0.9;
+    /*transform: translateY(-50px);*/
+}
+
+.about {
+    max-width: 800px;
+    height: auto;
+    color: white;
+    display: flex;
+    margin: auto;
+    padding: 50px;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.about-text {
+    padding: 10px;
+    line-height: 1rem;
+}
+
+.about p {
+    margin-top: 20px;
+}
+
+.about img {
+    width: 220px;
+    height: 350px;
+    border-radius: 10px;
+}
+
+figcaption {
+    font-size: 12px;
+    text-align: center;
+}
+
+.training {
+    color: white;
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    margin-bottom: 50px;
+    padding:
+}
+
+.training img {
+    width: 100px;
+    height: auto;
+}
+
+.bike {
+    border: 2px solid rgb(255, 185, 0);
+}
+
+.swim {
+    border: 2px solid rgb(0, 208, 255);
+
+}
+
+.run {
+    border: 2px solid rgb(62, 196, 0);
+}
+
+.run img {
+    width: 65px;
+    height: auto;
+}
+
+.leg {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    border-radius: 15px;
+    padding: 40px 20px;
+    height: auto;
+    width: 220px;
+    margin-top: 40px;
+}
+
+.events {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    color: white;
+}
+
+table {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 100px;
+    padding: 20px;
+    
+}
+
+th {
+    text-align: left;
+    color: rgb(0, 208, 255);
+}
+
+td {
+    border-top: 1px solid white;
+    text-align: left;
+    height: 50px;
+}
+
+.btn {
+    text-align: center;
+
+}
+
+button {
+    width: 90px;
+    height: auto;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    background-color: rgb(0, 208, 255);
+    border: 1px solid transparent;
+    color: black;
+    text-transform: capitalize;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: black;
+    transition: ease-in-out 0.3s;
+    color: white;
+    border: 1px solid white;
+}
+
+footer {
+    height: 400px;
+    background-color: white;
+}
+
+@media (max-width: 600px) {
+    .training {
+        flex-direction: column;
+        width: 90%;
+
+        align-items: center;
+    }
+
+    .about {
+        flex-direction: column-reverse;
+    }
+
+    .about p {
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    
+    
+}
