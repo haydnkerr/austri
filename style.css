@@ -1,3 +1,5 @@
+/* universal style */
+
 * {
     margin: 0;
     padding: 0;
@@ -9,6 +11,28 @@ body {
     font-family: "";
 }
 
+h2 {
+    color: whitesmoke;
+    text-align: center;
+    text-decoration: double;
+    font-family: "Work Sans";
+    font-weight: 500;
+    font-size: 40px;
+    margin-top: 100px;
+}
+
+h3 {
+    font-family: "Work Sans";
+    font-weight: 500;
+}
+
+h4 {
+    font-family: "Work Sans";
+    font-weight: 100;
+}
+
+
+/* navigation bar */
 
 header {
     background-color: rgba(0, 0, 0, 0.5);
@@ -61,20 +85,9 @@ a::after {
     color: white;
 }
 
-h2 {
-    color: whitesmoke;
-    text-align: center;
-    text-decoration: double;
-    font-family: "Work Sans";
-    font-weight: 500;
-    font-size: 40px;
-    margin-top: 100px;
-}
+/* top */
 
-h3 {
-    font-family: "Work Sans";
-    font-weight: 500;
-}
+
 
 .top {
     background-image: url(./images/viktor-bystrov-Gi0OMNguFaw-unsplash.jpg);
@@ -96,6 +109,7 @@ h3 {
     font-style: italic;
     text-align: center;
     opacity: 0.9;
+    transition: all .5s ease-in-out;
 }
 
 .top-info p {
@@ -103,7 +117,11 @@ h3 {
     font-weight: lighter;
     font-size: smaller;
     opacity: 0.8;
+    transition: all .5s ease-in;
 }
+
+
+/* about section */
 
 .about {
     max-width: 800px;
@@ -119,6 +137,7 @@ h3 {
 .about-text {
     padding: 10px;
     line-height: 1rem;
+    transition: all .5s ease-in-out;
 }
 
 .about p {
@@ -135,6 +154,9 @@ figcaption {
     font-size: 12px;
     text-align: center;
 }
+
+
+/* training section */
 
 .training {
     color: white;
@@ -180,6 +202,10 @@ figcaption {
     margin-top: 50px;
 }
 
+
+/* events section */
+
+
 .events {
     max-width: 1150px;
     padding: 0px 20px;
@@ -194,14 +220,12 @@ table {
     margin: auto;
     margin-top: 100px;
     text-align: center;
-    
 }
 
 th {
     text-align: center;
     color: white;
     font-size: larger;
-
 }
 
 td {
@@ -212,7 +236,6 @@ td {
 
 .btn {
     text-align: center;
-
 }
 
 button {
@@ -235,6 +258,8 @@ button:hover {
     border: 1px solid white;
 }
 
+/* athletes section */
+
 .athletes {
     width: 100vw;
     padding: 0px 30px;
@@ -242,8 +267,6 @@ button:hover {
     flex-direction: column;
     color: white;
     margin-top: 80px;
-
-
 }
 
 .card {
@@ -272,6 +295,7 @@ button:hover {
 .grace {
     display: flex;
 }
+
 .dave {
     display: flex;
     justify-content: center;
@@ -282,20 +306,137 @@ button:hover {
     justify-content: flex-end;
 }
 
-h4 {
-    font-family: "Work Sans";
-    font-weight: 100;
+
+
+/* location */
+
+
+/* footer */
+footer {
+    color: white;
+    padding: 100px 50px 50px 50px;
+    display: flex;
+    flex-direction: column;
 }
 
-footer {
-    height: 400px;
-    background-color: white;
+.footer-info {
+    display: flex;
+    justify-content: space-between;
 }
+
+.footer-logo {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.footer-aus-logo {
+    font-family: "Work Sans";
+    font-weight: 100;
+    letter-spacing: 0.2rem;
+    font-size: 50px;
+}
+
+.footer-tri-logo {
+    font-family: "Work Sans";
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    color: gold; 
+    font-size: 50px;
+}
+
+.icon {
+    margin-right: 10px;
+    height: 20px;
+}
+
+footer ul {
+    list-style-type: none;
+    line-height: 3rem;
+    font-size: 1.4rem;
+    font-weight: 300;
+    font-family: "Work Sans";
+}
+
+footer a:hover {
+    cursor: pointer;
+    font-weight: 400;
+    color: white;
+}
+
+.location {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    font-family: "Work Sans";
+    font-weight: 200;
+    width: 35%;
+}
+
+.address {
+    display: flex;
+}
+
+.address p {
+    margin-left: 15px;
+}
+
+.location img {
+    margin-right: 20px;
+}
+
+.social-icons {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons img {
+    width: 50px;
+    /*margin: 10px;*/
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+.social-icons img:hover {
+    cursor: pointer;
+    padding: 0px;
+    transition: ease-in-out .3s;
+}
+
+h6 {
+    text-align: right;
+    font-family: "Work Sans";
+    font-weight: 200;
+}
+
+
+
+
+
+/* responsiveness */
 
 @media (max-width: 800px) {
     .top-info {
         font-size: 20px;
     }
+
+    
+}
+
+@media (max-width: 730px) {
+    .footer-info {
+        flex-direction: column;
+    }
+
+    .location {
+        width: 100%;
+    }
+
+    h6 {
+        text-align: center;
+    }
+
 }
 
 @media (max-width: 600px) {
@@ -347,4 +488,26 @@ footer {
     }
     
     
+    
+    
+    
+    
+
+    
+    
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
